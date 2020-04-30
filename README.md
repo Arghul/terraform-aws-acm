@@ -11,7 +11,7 @@ This module has a few dependencies:
 To create a certificate for *test.dev.arghul.com*
 ```hcl-terraform
 module "cert" {
-  source = "../"
+  source = "git::https://github.com/arghul/terraform-aws-acm.git?ref=master"
 
   namespace   = "arghul"
   environment = "dev"
