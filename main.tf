@@ -48,8 +48,4 @@ resource "aws_acm_certificate" "cert" {
   tags = merge(module.label.tags, {
     Name = local.name
   })
-
-  lifecycle {
-    create_before_destroy = true
-  }
 }
